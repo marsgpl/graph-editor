@@ -1,0 +1,72 @@
+.Button {
+    border-radius: 4px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    font-size: 16px;
+    color: #000;
+    transition: background-color .1s, transform .1s;
+    cursor: pointer;
+    max-width: 100%;
+    border: none;
+}
+
+.Button:active {
+    transform: scale(.96);
+}
+
+.Theme_yellow {
+    background-color: #ffdb4d;
+}
+
+.Theme_yellow:hover {
+    background-color: #ffd429;
+}
+
+.Theme_yellow:active {
+    background-color: #fc0;
+}
+
+.Theme_grey {
+    background-color: #ddd;
+}
+
+.Theme_grey:hover {
+    background-color: #d4d4d4;
+}
+
+.Theme_grey:active {
+    background-color: #cacaca;
+}
+
+.Theme_blackborder {
+    border: 1px solid #777;
+}
+
+.Theme_blackborder:hover {
+    border: 1px solid #555;
+}
+
+.Theme_blackborder:active {
+    border: 1px solid #333;
+}
+
+.Size_big {
+    height: 44px;
+    line-height: 44px;
+    padding: 0 30px;
+}
+
+.Size_med {
+    height: 34px;
+    line-height: 34px;
+    padding: 0 20px;
+}
+
+.Size_small {
+    width: 24px;
+    height: 24px;
+    line-height: 20px;
+    text-align: center;
+    text-transform: lowercase;
+}

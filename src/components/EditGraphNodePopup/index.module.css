@@ -1,0 +1,13 @@
+.RelRow {
+    display: flex;
+    align-items: center;
+    height: 40px;
+}
+
+.RelRowGrow {
+    flex-grow: 1;
+}
+
+.AddRelButton {
+    margin-top: 10px;
+}

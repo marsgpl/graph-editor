@@ -1,0 +1,81 @@
+.Shadow {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, .2);
+    z-index: 999999;
+    min-width: 320px;
+    overflow: auto;
+    padding: 20px;
+}
+
+.Window {
+    position: relative;
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    border-radius: 4px;
+    margin: 0 auto;
+    max-width: calc(100vw - 40px);
+    word-wrap: break-word;
+}
+
+.WindowTitle {
+    text-align: center;
+    height: 84px;
+    line-height: 84px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    /* padding: 0 20px; */
+    padding: 0 84px;
+    margin: 0;
+    font-size: 24px;
+    font-weight: normal;
+    user-select: none;
+}
+
+.WindowBody {
+    padding: 0 20px 20px;
+}
+
+.WindowClose {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    background: #fff;
+    transition: background-color .2s;
+    cursor: pointer;
+}
+
+.WindowClose:hover {
+    background-color: rgba(0, 0, 0, .05);
+}
+
+.WindowClose:active {
+    background-color: rgba(0, 0, 0, .1);
+}
+
+.WindowClose:before,
+.WindowClose:after {
+    content: '';
+    position: absolute;
+    width: 32px;
+    height: 1px;
+    background: #555;
+    top: 32px;
+}
+
+.WindowClose:before {
+    transform: rotate(45deg);
+    left: 16px;
+}
+
+.WindowClose:after {
+    transform: rotate(-45deg);
+    right: 16px;
+}

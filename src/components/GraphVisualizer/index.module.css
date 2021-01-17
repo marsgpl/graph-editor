@@ -1,0 +1,9 @@
+.GraphVisualizer {
+    overflow: visible;
+    user-select: none;
+    position: absolute;
+}
+
+.GraphVisualizer text {
+    font-size: 16px;
+}

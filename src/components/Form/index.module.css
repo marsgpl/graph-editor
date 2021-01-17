@@ -1,0 +1,22 @@
+.Row {
+    display: block;
+}
+
+.Row + .Row {
+    margin-top: 20px;
+}
+
+.RowLabel {
+    margin-bottom: 10px;
+    cursor: default;
+    user-select: none;
+}
+
+.Buttons {
+    margin-top: 30px;
+    display: flex;
+}
+
+.ButtonsGrow {
+    flex-grow: 1;
+}

@@ -1,0 +1,19 @@
+.Input {
+    background: #f4f4f4;
+    border-bottom: 1px solid #f4f4f4;
+    width: 100%;
+    height: 44px;
+    padding: 10px;
+    line-height: 24px;
+    font-size: 16px;
+    cursor: text;
+    border-radius: 2px 2px 0 0;
+}
+
+.Input:focus {
+    border-bottom: 1px solid #666;
+}
+
+.Input:disabled {
+    opacity: .6;
+}

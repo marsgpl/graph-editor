@@ -1,0 +1,29 @@
+.Container {
+    position: relative;
+}
+
+.Dropdown {
+    position: absolute;
+    top: 44px;
+    left: 1px;
+    right: 1px;
+    background: #f8f8f8;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, .2);
+}
+
+.DropdownRow {
+    padding: 13px 10px;
+    cursor: pointer;
+}
+
+.DropdownRow + .DropdownRow {
+    border-top: 1px solid #ddd;
+}
+
+.DropdownRow:hover {
+    background: #f2f2f2;
+}
+
+.DropdownRow:active {
+    background: #eaeaea;
+}
