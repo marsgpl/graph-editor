@@ -22,7 +22,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "deploy": "ssh root@xuax 'rm -rf /var/www/xu.ax/ge' && rsync -rv build/ root@xuax:/var/www/xu.ax/ge/"
+    "deploy": "ssh root@marsgpl 'rm -rf /var/www/marsgpl.com/graph-editor' && rsync -rv build/ root@marsgpl:/var/www/marsgpl.com/graph-editor/"
   },
   "eslintConfig": {
     "extends": [
