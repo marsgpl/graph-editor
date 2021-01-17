@@ -78,12 +78,12 @@ export function EditGraphNodePopup({ graph, nodeId, setNodeId }: EditGraphNodePo
 
         return (
             <div className={styles.RelRow} key={relId}>
-                <label>
-                    {nodeFrom.label || rel.from}
+                <label className={styles.RelRowLabel}>
+                    {(rel.from === nodeId ? <b>this</b> : nodeFrom.label || rel.from)}
                     &nbsp;
                     {'->'}
                     &nbsp;
-                    {nodeTo.label || rel.to}
+                    {(rel.to === nodeId ? <b>this</b> : nodeTo.label || rel.to)}
                 </label>
 
                 <span className={styles.RelRowGrow} />
@@ -98,7 +98,7 @@ export function EditGraphNodePopup({ graph, nodeId, setNodeId }: EditGraphNodePo
                 >x</Button>
             </div>
         );
-    }, [graph.rels, graph.nodes, removeRel]);
+    }, [graph.rels, graph.nodes, removeRel, nodeId]);
 
     const renderRels = useCallback(() => (
         <>

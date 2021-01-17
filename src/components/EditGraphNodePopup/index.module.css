@@ -8,6 +8,11 @@
     flex-grow: 1;
 }
 
+.RelRowLabel {
+    word-break: break-word;
+    margin-right: 10px;
+}
+
 .AddRelButton {
     margin-top: 10px;
 }

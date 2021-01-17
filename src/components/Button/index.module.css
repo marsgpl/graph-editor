@@ -64,8 +64,8 @@
 }
 
 .Size_small {
-    width: 24px;
-    height: 24px;
+    min-width: 24px;
+    min-height: 24px;
     line-height: 20px;
     text-align: center;
     text-transform: lowercase;
