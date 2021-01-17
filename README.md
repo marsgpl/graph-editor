@@ -1,8 +1,10 @@
 # Graph editor
 
-## Init
+## Run
 
-    cd ~/projects
-    nvm install 15.5.1
     nvm use 15.5.1
-    npx create-react-app graph-editor --template typescript --use-npm
+    npm start
+
+## Demo
+
+[https://xu.ax/ge](https://xu.ax/ge)
